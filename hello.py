@@ -1,5 +1,10 @@
 #! /usr/bin/env python
 
-print("Hello bioinformatics ")
-print("Hello World")
-print("git add hello.py")
+import sys
+print(sys.argv)
+
+name = sys.argv[1]
+name2 = sys.argv[2]
+print(f"Hello {name}")
+print(f"Hello {name2}")
+
