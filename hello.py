@@ -1,3 +1,3 @@
 #! /usr/bin/env python
 
-print("Hellow World")
+print("Hello Bioinformatics ")
