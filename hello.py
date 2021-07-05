@@ -1,3 +1,4 @@
 #! /usr/bin/env python
 
-print("Hello Bioinformatics ")
+print("Hello bioinformatics ")
+print("Hello World")
