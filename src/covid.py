@@ -13,9 +13,8 @@ with open(file_name, 'r') as handle: # with open으로 파일을 열음
             continue #continue를 하겠다 라는 뜻. 즉 그냥 넘어가겠다.
         for base in line.strip(): # continue다음의 줄부터 for문을 적용하여하는데 strip으로 enter들을 날려버림. 염기서열이여러 줄로 출력됨으로 엔터들이 들어가 있음
             if base not in data: # base가 data라는 dictionary에 들어있지 않다면 data{"base":0}이 됨. 
-                data[base] = 0
-            data[base] += 1 # 들어있다면 카운트에 1을 더함. 즉 마지막 base까지 카운트를 한 후 +1을 함으로 0으로 카운트된 것에서 1이 더해짐.
-
+                data[base] = 0 # base가 존재하지 않으면 dictionary에 들어가며 0으로 카운트 이후 바로 밑 코드 실행
+            data[base] += 1 # 0인 염기는 +1이 되며 1이 카운트 이후 not in 이 아니므로 +1이 됨.
 print(data)
 # dictionary로 된 것을 출력해서 확인함.
 

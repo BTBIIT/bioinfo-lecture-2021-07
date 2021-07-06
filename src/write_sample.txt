@@ -1,4 +1,2 @@
 Hello
-Bioinformatics
-Ken
-s1	s2	s3
+write_sample text file

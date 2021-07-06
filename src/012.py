@@ -1,4 +1,3 @@
-??? from here until ???END lines may have been inserted/deleted
 #! /usr/bin/env python
 import sys
 num = int(input("Enter: "))
@@ -17,4 +16,3 @@ except ZeroDivisionErroexcept ZeroDivisionError as err :
     print(err)
     sys.exit()
 
-???END
